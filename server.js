@@ -24,7 +24,7 @@ const app = express();
 app.use(express.json());
 app.use(cors())
 app.get('/', (req, res) => {
-    res.send(db.users)
+    res.send('it is working')
 })
 //Components
 app.post('/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt)})
