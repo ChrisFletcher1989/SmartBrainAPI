@@ -23,9 +23,7 @@ const db= knex({
 const app = express();
 app.use(express.json());
 app.use(cors())
-app.get('/', (req, res) => {
-    res.send('it is working')
-})
+app.get('/', (req, res) => {res.send('it is working') })
 //Components
 app.post('/signin', (req, res) => { signin.handleSignin(req, res, db, bcrypt)})
 app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcrypt) })
@@ -37,5 +35,5 @@ app.post('/imagedetect', (req, res,) => {imageDetect.handleApiCallRecognize(req,
 //Listen for changes
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log('running OK on port ${process.env.PORT}')
+    console.log(`running OK on port ${process.env.PORT}`)
 })
