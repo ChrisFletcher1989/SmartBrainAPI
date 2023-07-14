@@ -13,7 +13,7 @@ const imageDetect = require ('./controllers/imageDetect')
 const db= knex({
     client: 'pg',
     connection: {
-    connectionString: process.env.postgresql-crystalline-29007,
+    connectionString: process.env.DATABASE_URL,
     ssl:true
     }
   });
