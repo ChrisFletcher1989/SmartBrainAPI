@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "smartbrainapi/server.js",
-    "start:dev": "gitserver.js"
-  },  
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
+  },
   "license": "ISC",
   "dependencies": {
     "bcrypt-nodejs": "^0.0.3",
