@@ -1,7 +1,7 @@
 //API user info
 const returnClarifaiRequestOptions1 = (imageUrl) => {
-    const PAT ='0c1e3431a67a413db04239c90b89d1db';
-    const USER_ID ='chrisfletcher';       
+    const PAT ='ENTER_CLARIFAI_PAT';
+    const USER_ID ='ENTER_USERNAME';       
     const APP_ID ='smartbrain';
     const IMAGE_URL = imageUrl;
     const raw = JSON.stringify({
